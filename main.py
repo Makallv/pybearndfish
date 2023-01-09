@@ -50,10 +50,18 @@ def main():
         i += 1
 
     # print the number of fish in the world
-    print(f"Number of fish in the world: {Fish.FISH_COUNT}")
+    text_fish = f'There are fish remaining: {Fish.FISH_COUNT}'
+    for char in text_fish:
+        print(char, end="")
+        time.sleep(1)
+        print()
 
     # print the number of alive bears
-    print(f"Number of alive bears: {len(Bear.ALIVE_BEARS)}")
+    text_bear = f"Number of alive bears: {len(Bear.ALIVE_BEARS)}"
+    for char in text_bear:
+        print(char, end="")
+        time.sleep(1)
+        print()
 
     # print the alive bears
     for bear in Bear.ALIVE_BEARS:
@@ -63,7 +71,8 @@ def main():
         for char in text:
             print(char, end="")
             time.sleep(1)
-            
+        print()
+
     # print the number of dead bears if there are any
     if len(Bear.DEAD_BEARS) > 0:
         for bear in Bear.DEAD_BEARS:
