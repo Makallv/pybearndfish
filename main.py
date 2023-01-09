@@ -67,6 +67,9 @@ def main():
     if len(Bear.DEAD_BEARS) > 0:
         for bear in Bear.DEAD_BEARS:
             text = f"{bear.name} has died"
+            for char in text:
+                print(char, end="")
+                time.sleep(1)
 
     # create a planet
     earth = Planet("Earth", 29.1, 70.9)
