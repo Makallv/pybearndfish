@@ -61,7 +61,7 @@ def main():
         text1 = f"{bear.name} is alive with {bear.energy} remaining in it's tank and"
         text = text1 + text2
         for char in text:
-            print(char)
+            print(char, end="")
             time.sleep(1)
     # print the number of dead bears if there are any
     if len(Bear.DEAD_BEARS) > 0:
