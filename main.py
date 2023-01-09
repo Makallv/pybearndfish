@@ -63,6 +63,7 @@ def main():
         for char in text:
             print(char, end="")
             time.sleep(1)
+            
     # print the number of dead bears if there are any
     if len(Bear.DEAD_BEARS) > 0:
         for bear in Bear.DEAD_BEARS:
